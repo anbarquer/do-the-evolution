@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="*"
+        android:weightSum="1" >
+
+        <TableRow android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/listPreferredItemHeight" 
+                android:padding="6dip">
+
+                <TextView
+                    android:id="@+id/nombre_enemigo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imagen_enemigo"
+                    android:layout_toRightOf="@+id/imagen_enemigo"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="1mm" />
+
+                <TextView
+                    android:id="@+id/nivel_enemigo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/nombre_enemigo"
+                    android:layout_below="@+id/nombre_enemigo"
+                    android:paddingLeft="1mm" />
+
+                <com.model.TextProgressBar
+                    android:id="@+id/progressBarVidaEnemigo"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nivel_enemigo"
+                    android:layout_marginLeft="1mm"
+                    android:layout_toRightOf="@+id/imagen_enemigo"
+                    android:progressDrawable="@layout/custom_progressbar_roja" />
+
+                <ImageView
+                    android:id="@+id/imagen_enemigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/message_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="50mm" 
+            android:padding="1mm"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="*"
+        android:weightSum="1" >
+
+        <TableRow android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:paddingLeft="6dip">
+
+                <ImageView
+                    android:id="@+id/imagen_monstruo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/nivel_monstruo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nombre_monstruo"
+                    android:layout_toLeftOf="@+id/imagen_monstruo"
+                    android:paddingBottom="0.6mm" />
+
+                <TextView
+                    android:id="@+id/nombre_monstruo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/imagen_monstruo"
+                    android:gravity="left" />
+
+                <com.model.TextProgressBar
+                    android:id="@+id/progressBarVidaMonstruo"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nivel_monstruo"
+                    android:layout_marginRight="1mm"
+                    android:layout_toLeftOf="@+id/imagen_monstruo"
+                    android:progressDrawable="@layout/custom_progressbar_verde" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_gravity="top"
+        android:layout_weight="0.25"
+        android:padding="6dip" >
+
+
+        <TextView
+            android:id="@+id/nombre_enemigo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imagen_enemigo"
+            android:layout_toRightOf="@+id/imagen_enemigo"
+            android:gravity="center_vertical"
+            android:paddingLeft="1mm" />
+
+        <TextView
+            android:id="@+id/nivel_enemigo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nombre_enemigo"
+            android:layout_below="@+id/nombre_enemigo"
+            android:paddingLeft="1mm" />
+
+        <com.model.TextProgressBar
+            android:id="@+id/progressBarVidaEnemigo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nivel_enemigo"
+            android:layout_marginLeft="1mm"
+            android:layout_toRightOf="@+id/imagen_enemigo"
+            android:progressDrawable="@layout/custom_progressbar_roja" />
+
+        <ImageView
+            android:id="@+id/imagen_enemigo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/message_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" 
+            android:maxLines="20"/>
+    </LinearLayout>
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_weight="0.25"
+        android:gravity="bottom"
+        android:padding="6dip" >
+
+        <ImageView
+            android:id="@+id/imagen_monstruo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/nivel_monstruo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre_monstruo"
+            android:layout_toLeftOf="@+id/imagen_monstruo"
+            android:paddingBottom="0.6mm" />
+
+        <TextView
+            android:id="@+id/nombre_monstruo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/imagen_monstruo"
+            android:gravity="left" />
+
+        <com.model.TextProgressBar
+            android:id="@+id/progressBarVidaMonstruo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nivel_monstruo"
+            android:layout_marginRight="1mm"
+            android:layout_toLeftOf="@+id/imagen_monstruo"
+            android:progressDrawable="@layout/custom_progressbar_verde" />
+    </RelativeLayout>
+
+</LinearLayout>
+-->

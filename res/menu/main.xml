@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cloudmonsters.MainActivity" >
+
+    <item
+        android:id="@+id/action_ficha"
+        android:icon="@drawable/ic_action_text"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/action_ficha"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_tienda"
+        android:icon="@drawable/ic_action_shop"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/action_tienda"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_advanced"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_compartir"
+        android:icon="@drawable/ic_action_share"
+        android:orderInCategory="4"
+        android:showAsAction="always"
+        android:title="@string/action_compartir"
+        app:showAsAction="always">
+    </item>
+
+</menu>

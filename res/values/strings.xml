@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty"></string>
+    <string name="app_name">Cloud Monsters</string>
+    <string name="action_objetos">Objetos</string>
+    <string name="action_settings">Opciones</string>
+    <string name="action_ficha">Ficha</string>
+    <string name="action_salir">Salir</string>
+    <string name="action_tienda">Tienda</string>
+    <string name="action_compartir">Compartir</string>
+
+    <!-- Elementos del menú lateral para las acciones de la mascota -->
+    <string-array name="menu_lateral_items">
+        <item>Comer</item>
+        <item>Dormir</item>
+        <item>Ejercicio</item>
+        <item>Lavar</item>
+        <item>Jugar</item>
+        <item>Poción</item>
+        <item>Combate</item>
+    </string-array>
+    <!-- Elementos de las opciones -->
+    <string-array name="settings_opciones">
+        <item>Cambiar nombre</item>
+        <item>Resetear monstruo</item>
+        <item>Revivir monstruo</item>
+        <item>Lotería</item>
+    </string-array>
+    <!-- Información sobre las opciones -->
+    <string-array name="info_settings">
+        <item>Cambia el nombre del monstruo</item>
+        <item>Vuelve a los valores iniciales</item>
+        <item>Puedes revivir a tu monstruo por 200 créditos</item>
+        <item>Entras en un sorteo de un objeto. Cuesta 5 créditos</item>
+    </string-array>
+    <!-- Tipos de fragment de acciones de usuario y monstruo -->
+    <string-array name="tipo_fragment">
+        <item>Poción</item>
+        <item>Tienda</item>
+        <item>Ejercicio</item>
+        <item>Lavar</item>
+        <item>Dormir</item>
+        <item>Comer</item>
+        <item>Jugar</item>
+        <item>Ficha</item>
+        <item>Opciones</item>
+    </string-array>
+
+    <string name="pregunta_salir">¿Está seguro?</string>
+    <string name="pregunta_finito_combat">Se ha terminado el combate</string>
+    <string name="pasar_combat">Terminar combate rápido</string>
+    <string name="titulo_salir">Salir</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="vida">Vida</string>
+    <string name="peso">Peso</string>
+    <string name="somnolencia">Somnolencia</string>
+    <string name="hambre">Hambre</string>
+    <string name="felicidad">Felicidad</string>
+    <string name="combates">Combates</string>
+    <string name="acciones">Acciones</string>
+    <string name="suciedad">Suciedad</string>
+    <string name="cansancio">Cansancio</string>
+    <string name="nivel">Nivel</string>
+    <string name="experiencia">Experiencia</string>
+    <string name="fuerza">Fuerza</string>
+    <string name="resistencia">Resistencia</string>
+    <string name="velocidad">Velocidad</string>
+    <string name="inteligencia">Inteligencia</string>
+    <string name="suerte">Suerte</string>
+    <string name="ataque">Ataque</string>
+    <string name="defensa">Defensa</string>
+    <string name="destreza">Destreza</string>
+    <string name="nombre">Nombre</string>
+    <string name="creditos">Créditos</string>
+    <string name="inventario">Inventario</string>
+    <string name="no_mas_combates">No pueden realizarse más combates</string>
+    <string name="no_suficiente_vida">Toma alguna poción</string>
+    <string name="no_mas_acciones">No pueden realizarse más acciones</string>
+    <string name="item">Item</string>
+    <string name="cambiar_nombre">Cambiar nombre</string>
+    <string name="intro_nombre">Introduzca el nuevo nombre</string>
+    <string name="nombre_cambiado">Nombre cambiado</string>
+    <string name="nombre_incorrecto">Nombre incorrecto</string>
+    <string name="mons_reseteado">Monstruo reseteado</string>
+    <string name="vida_restablecida">Vida restablecida</string>
+    <string name="no_es_necesario">No es necesario en este momento</string>
+    <string name="ahora_tienes">Ahora tienes</string>
+    <string name="acciones_mens">acciones</string>
+    <string name="combates_mens">combates</string>
+    <string name="creditos_mens">créditos</string>
+    <string name="te_ha_tocado">Te ha tocado</string>
+    <string name="borra_todo">Resetear monstruo</string>
+    <string name="bienvenida">Bienvenido a Cloud Monsters. Selecciona una opción para comenzar</string>
+    <string name="no_hay_objetos">No hay objetos. Pulsa para ir a la tienda</string>
+    <string name="no_hay_enemigos">No hay enemigos para combatir en este momento</string>
+    <string name="cambio_notificacion">Hay cambios en Cloud Monsters</string>
+    <string name="hay_atributos_cambiados">Algunos atributos han cambiado</string>
+    <string name="buscando_oponentes">Buscando oponentes...</string>
+    <string name="btn_revoke_access">Anular acceso</string>
+    <string name="btn_logout_from_google">Logout Google</string>
+    <string name="conec_google">Conectado a Google</string>
+    <string name="no_info_pers">No hay información de la persona</string>
+    <string name="btn_share">Compartir</string>
+    <string name="mensaje_share">Jugando a Cloud Monsters con</string>
+    <string name="mensaje_share_error">Identificate con una cuenta de Google</string>
+    <string name="no_tienes_creditos">No tienes suficientes créditos</string>
+    <string name="fin_del_combate">Combate terminado</string>
+    <string name="refrescar_enemigos">Buscar enemigos</string>
+
+</resources>

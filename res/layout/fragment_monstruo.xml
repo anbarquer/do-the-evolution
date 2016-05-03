@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EstadoMonstruoFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageMonstruo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2mm"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:stretchColumns="*"
+        android:weightSum="10" >
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewVida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vida" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarVida"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/peso" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarPeso"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewSomnolencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/somnolencia" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarSomnolencia"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textHambre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hambre" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarHambre"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewFelicidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/felicidad" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarFelicidad"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewSuciedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suciedad" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarSuciedad"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewCansancio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cansancio" />
+
+            <com.model.TextProgressBar
+                android:id="@+id/progressBarCansancio"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@layout/custom_progressbar_verde" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewAcciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acciones" />
+
+            <TextView
+                android:id="@+id/textViewNumAcciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp" />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/textViewCreditos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creditos" />
+
+            <TextView
+                android:id="@+id/textViewNumCreditos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

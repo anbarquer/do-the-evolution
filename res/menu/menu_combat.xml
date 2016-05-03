@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cloudmonsters.CombateActivity" >
+
+    <item
+        android:id="@+id/action_rapido"
+        android:icon="@drawable/ic_action_fast"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/pasar_combat"
+        app:showAsAction="always">
+    </item>
+     <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/refrescar_enemigos"
+        app:showAsAction="always">
+    </item>
+    
+
+</menu>
